@@ -1,27 +1,42 @@
-# AngularAssignment
+ # PortfolioV3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+[![Node.js](https://img.shields.io/badge/Node.js-20.x-green.svg)](https://nodejs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Angular Version](https://img.shields.io/badge/Angular-v17-red)](https://angular.io/)
+[![Built with Tailwind CSS](https://img.shields.io/badge/Built_with-Tailwind_CSS-blueviolet?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Built with TypeScript](https://img.shields.io/badge/Built_with-TypeScript-blue?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-## Development server
+Explore my portfolio website crafted with Angular and Tailwind CSS, showcasing my projects and insights through an integrated blog functionality. Dive into my journey, projects, and thoughts all in one seamless experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+To get started, follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone this repository to your local machine.
 
-## Build
+```bash
+git clone https://github.com/haroonsaifi17/AngularAssignment.git && cd AngularAssignment
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Install project dependencies using npm
 
-## Running unit tests
+```bash
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+To run the app, use the following command:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm run start
+```
 
-## Further help
+### Contribution:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contributions are welcome! Feel free to submit pull requests or open issues for any suggestions, bug fixes, or improvements.
+
+### License:
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

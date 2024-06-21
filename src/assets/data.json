@@ -1,0 +1,106 @@
+[
+  {
+    "name": "PLA",
+    "tags": ["3D printing", "FDM", "Medical", "Standard Plastic"],
+    "image": "https://www.twi-global.com/CachedImage.axd?ImageName=ABS-and-PLA-Filament.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=103178&ImageModified=20201208170447",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "red", "white", "yellow"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "PTEG",
+    "tags": ["3D printing", "SLA", "Electronics", "Resin"],
+    "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "grey", "white"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "PLA",
+    "tags": ["3D printing", "FDM", "Medical", "Standard Plastic"],
+    "image": "https://www.twi-global.com/CachedImage.axd?ImageName=ABS-and-PLA-Filament.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=103178&ImageModified=20201208170447",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "red", "white", "yellow"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "PTEG",
+    "tags": ["3D printing", "SLA", "Electronics", "Resin"],
+    "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "grey", "white"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "PLA",
+    "tags": ["3D printing", "FDM", "Medical", "Standard Plastic"],
+    "image": "https://www.twi-global.com/CachedImage.axd?ImageName=ABS-and-PLA-Filament.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=103178&ImageModified=20201208170447",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "red", "white", "yellow"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "PTEG",
+    "tags": ["3D printing", "SLA", "Electronics", "Resin"],
+    "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "grey", "white"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "PLA",
+    "tags": ["3D printing", "FDM", "Medical", "Standard Plastic"],
+    "image": "https://www.twi-global.com/CachedImage.axd?ImageName=ABS-and-PLA-Filament.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=103178&ImageModified=20201208170447",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "red", "white", "yellow"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "PTEG",
+    "tags": ["3D printing", "SLA", "Electronics", "Resin"],
+    "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "grey", "white"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  }
+]
