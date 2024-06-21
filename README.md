@@ -1,4 +1,4 @@
- # PortfolioV3
+ # AngularAssignment
 
 [![Node.js](https://img.shields.io/badge/Node.js-20.x-green.svg)](https://nodejs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -6,7 +6,6 @@
 [![Built with Tailwind CSS](https://img.shields.io/badge/Built_with-Tailwind_CSS-blueviolet?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Built with TypeScript](https://img.shields.io/badge/Built_with-TypeScript-blue?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-Explore my portfolio website crafted with Angular and Tailwind CSS, showcasing my projects and insights through an integrated blog functionality. Dive into my journey, projects, and thoughts all in one seamless experience.
 
 ## Installation
 
