@@ -16,14 +16,43 @@
     </div>
   </div>
   <div [style.right]="isFilterOpen ? '0' : '-100%'"
-    class="fixed top-0 duration-500 ease-in-out right-0 z-50 max-w-[500px] w-full h-[100vh] bg-white p-8">
+    class="fixed top-0 duration-500 ease-in-out right-0 z-50 max-w-[500px] w-full h-[100vh] bg-white p-8 flex flex-col justify-between">
+    <div class="overflow-y-scroll">
     <div class="flex justify-end">
       <a class="inline-block p-2 px-3 rounded-full bg-red-500 text-white" (click)="isFilterOpen = false">Close <fa-icon
           [icon]="faXMark"></fa-icon>
       </a>
     </div>
     <h2 class="text-2xl font-[600] mt-4">Filter</h2>
+    <a class="flex justify-between p-2 px-4 border-y text-xl mt-4"
+      (click)="isTechDropDownOpen = !isTechDropDownOpen"><span>Technologies</span>
+      <fa-icon class="ml-auto duration-300" [icon]="faChevronDown"
+        [style.rotate]="isTechDropDownOpen ? '180deg' : '0deg'"></fa-icon></a>
+    <div [style.display]="isTechDropDownOpen ? 'block' : 'none'" class="p-4 text-gray-600">
+      <div class="flex gap-2 items-center" *ngFor="let checkbox of techcheckboxes; let i = index">
+        <input type="checkbox" [value]="checkbox" [checked]="techcheckedStatus[i]" (change)="onTechCheckboxChange($event, i)" />{{ checkbox }}
+      </div>
+    </div>
+    <a class="flex mt-[-1px] justify-between p-2 px-4 border-y text-xl"
+      (click)="isIndusDropDownOpen = !isIndusDropDownOpen"><span>Industries</span>
+      <fa-icon class="ml-auto duration-300" [style.rotate]="isIndusDropDownOpen ? '180deg' : '0deg'"
+        [icon]="faChevronDown"></fa-icon></a>
+    <div [style.display]="isIndusDropDownOpen ? 'block' : 'none'" class="p-4 text-gray-600">
+      <div class="flex gap-2 items-center" *ngFor="let checkbox of induscheckboxes; let i = index">
+        <input type="checkbox" [value]="checkbox" [checked]="induscheckedStatus[i]" (change)="onIndusCheckboxChange($event, i)" />{{ checkbox }}
+      </div>
+    </div>
+    </div>
+    <div class="mb-16 flex gap-4"><a (click)="getCheckedValues();filterData(input)" class="flex-1 text-center p-3 rounded-full bg-blue-400 text-white">Apply</a><a (click)="resetAll();filterData(input)" class="flex-1 text-blue-400 border-blue-400 border text-center p-3 rounded-full ">Reset All</a></div>
   </div>
   <div (click)="isFilterOpen = false" [style.display]="isFilterOpen ? 'block' : 'none'"
     class="fixed top-0 right-0 w-[100vw] duration-300 h-[100vh] bgCustom backdrop-blur z-40"></div>
 </header>
+<div class="max-w-screen-2xl mx-auto px-[5vw] py-4 flex gap-3 flex-wrap">
+ <a class="border-blue-400 p-1 px-2 text-blue-400 text-sm rounded-full border" *ngFor="let tag of filterArray">
+  {{tag}} <fa-icon class="ml-1" [icon]="faXMark"></fa-icon>
+</a>
+  <a (click)="resetAll();filterData(input)" class="border-blue-400 p-1 px-2 text-blue-400 text-sm rounded-full border" *ngIf="filterArray.length>1">
+  Reset All<fa-icon class="ml-1" [icon]="faXMark"></fa-icon>
+</a>
+</div>

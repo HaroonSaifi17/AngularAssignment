@@ -26,7 +26,7 @@ export class DataService {
     []
   );
   private data$: Observable<Item[]> = this.dataSubject.asObservable();
-   private originalData: Item[] = [];
+  private originalData: Item[] = [];
 
   constructor(private http: HttpClient) {
     this.loadData();
@@ -43,9 +43,11 @@ export class DataService {
     return this.dataSubject.asObservable();
   }
 
-  filterData(searchValue:string): void {
-     const filteredData = this.originalData.filter(item =>
-      item.name.toLowerCase().includes(searchValue.toLowerCase())
+  filterData(searchValue: string, filterArray: string[]): void {
+    const filteredData = this.originalData.filter(
+      (item) =>
+        item.name.toLowerCase().includes(searchValue.toLowerCase()) &&
+        filterArray.every((filter) => item.tags.includes(filter))
     );
     this.dataSubject.next(filteredData);
   }
