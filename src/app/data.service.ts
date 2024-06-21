@@ -26,6 +26,7 @@ export class DataService {
     []
   );
   private data$: Observable<Item[]> = this.dataSubject.asObservable();
+   private originalData: Item[] = [];
 
   constructor(private http: HttpClient) {
     this.loadData();
@@ -33,6 +34,7 @@ export class DataService {
 
   private loadData() {
     this.http.get<Item[]>('assets/data.json').subscribe((data) => {
+      this.originalData = data;
       this.dataSubject.next(data);
     });
   }
@@ -41,7 +43,10 @@ export class DataService {
     return this.dataSubject.asObservable();
   }
 
-  setData(newData: Item[]): void {
-    this.dataSubject.next(newData);
+  filterData(searchValue:string): void {
+     const filteredData = this.originalData.filter(item =>
+      item.name.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    this.dataSubject.next(filteredData);
   }
 }

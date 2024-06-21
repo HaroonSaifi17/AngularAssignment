@@ -1,1 +1,29 @@
-<p>search-bar works!</p>
+<header class="border-b-2">
+  <div class="max-w-screen-2xl mx-auto py-4 px-[5vw] flex justify-between gap-4 flex-wrap items-center">
+    <div class="bg-slate-200 p-[6px] inline-block rounded-full whitespace-nowrap">
+      <input #input type="text" placeholder="Search Materials" (input)="filterData(input)"
+        class="p-2 bg-gray-white rounded-full max-sm:w-[200px]" />
+      <a (click)="filterData(input)"
+        class="bg-white p-1 text-gray-800 w-9 h-9 rounded-full aspect-square inline-flex justify-center ml-2 items-center">
+        <fa-icon [icon]="faSearch"></fa-icon></a>
+    </div>
+    <div>
+      <a (click)="isFilterOpen = true"
+        class="bg-blue-500 inline-flex p-2 px-3 text-white rounded-full gap-2 items-center">
+        Filter
+        <fa-icon [icon]="faFilter"></fa-icon>
+      </a>
+    </div>
+  </div>
+  <div [style.right]="isFilterOpen ? '0' : '-100%'"
+    class="fixed top-0 duration-500 ease-in-out right-0 z-50 max-w-[500px] w-full h-[100vh] bg-white p-8">
+    <div class="flex justify-end">
+      <a class="inline-block p-2 px-3 rounded-full bg-red-500 text-white" (click)="isFilterOpen = false">Close <fa-icon
+          [icon]="faXMark"></fa-icon>
+      </a>
+    </div>
+    <h2 class="text-2xl font-[600] mt-4">Filter</h2>
+  </div>
+  <div (click)="isFilterOpen = false" [style.display]="isFilterOpen ? 'block' : 'none'"
+    class="fixed top-0 right-0 w-[100vw] duration-300 h-[100vh] bgCustom backdrop-blur z-40"></div>
+</header>

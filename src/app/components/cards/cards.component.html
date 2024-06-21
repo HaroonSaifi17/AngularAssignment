@@ -1,11 +1,11 @@
 <section>
-  <div class="max-w-screen-2xl mx-auto py-24 px-[5vw]">
+  <div class="max-w-screen-2xl mx-auto py-8 px-[5vw]">
     <div *ngIf="items$ | async as items; else skeleton" class="flex flex-wrap gap-6 justify-center items-stretch">
-      <div *ngFor="let item of items" class="shadow rounded-3xl bg-white overflow-hidden max-w-[300px] flex-grow">
-        <img [src]="item.image" alt="cardImg" class="w-[300px] aspect-video bg-slate-300 flex-grow-0" />
+      <div *ngFor="let item of items" class="shadow rounded-3xl bg-white overflow-hidden max-w-[350px] flex-grow max-[400px]:w-[90vw]">
+        <img [src]="item.image" alt="cardImg" class="w-[350px] aspect-video bg-slate-300 flex-grow-0" />
         <div
-          class="p-4 pt-6 before:content-[''] before:block before:bg-white before:w-[120%] before:h-8 before:absolute before:top-0 before:-left-2 before:-rotate-6 before:origin-left relative">
-          <h2 class="font-[600] text-2xl text-center uppercase mb-2">
+          class="p-4 pt-6 before:content-[''] before:block before:bg-white before:w-[120%] before:h-10 before:absolute before:top-0 before:-left-2 before:-rotate-6 before:origin-left relative z-10">
+          <h2 class="font-[600] text-amber-500 relative z-20 text-xl uppercase mb-2">
             {{ item.name }}
           </h2>
           <p class="flex flex-wrap gap-2 mb-2">
@@ -64,5 +64,8 @@
         </div>
       </div>
     </ng-template>
+    <div *ngIf="(items$ | async)!.length == 0">
+      <h3 class="text-3xl text-center text-gray-600 pt-5">No Result Found</h3>
+    </div>
   </div>
 </section>
