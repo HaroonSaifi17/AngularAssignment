@@ -14,24 +14,19 @@ import { DataService } from '../../data.service';
   standalone: true,
   imports: [CommonModule, FontAwesomeModule],
   templateUrl: './search-bar.component.html',
-  styleUrl: './search-bar.component.css',
+  styleUrls: ['./search-bar.component.css'],
 })
 export class SearchBarComponent {
-  isFilterOpen = false;
-  faSearch = faSearch;
-  faFilter = faFilter;
-  faXMark = faXmark;
-  faChevronDown = faChevronDown;
-  searchValue = '';
-  filterArray: string[] = [];
-  isTechDropDownOpen = false;
-  isIndusDropDownOpen = false;
-  constructor(private dataServie: DataService) {}
-  filterData(Input: HTMLInputElement) {
-    this.searchValue = Input.value;
-    this.dataServie.filterData(this.searchValue, this.filterArray);
-  }
-  techcheckboxes = [
+  isFilterOpen: boolean = false;
+  faSearchIcon = faSearch;
+  faFilterIcon = faFilter;
+  faCloseIcon = faXmark;
+  faChevronDownIcon = faChevronDown;
+  searchQuery: string = '';
+  filterTags: string[] = [];
+  isTechDropdownOpen: boolean = false;
+  isIndustryDropdownOpen: boolean = false;
+  techOptions: string[] = [
     'FDM',
     'SLA',
     'SLF',
@@ -42,51 +37,66 @@ export class SearchBarComponent {
     'Vaccum Casting',
     'CNC',
   ];
-  techcheckedValues: string[] = [];
-  techcheckedStatus: boolean[] = new Array(this.techcheckboxes.length).fill(
+  selectedTechOptions: string[] = [];
+  techCheckboxStates: boolean[] = new Array(this.techOptions.length).fill(
     false
   );
-
-  onTechCheckboxChange(event: Event, index: number) {
-    const inputElement = event.target as HTMLInputElement;
-    this.techcheckedStatus[index] = inputElement.checked;
-  }
-  induscheckboxes = [
+  industryOptions: string[] = [
     'Automotive',
     'Aerospace',
     'Consumer Electronics',
     'Robotics And Automation',
     'Medical And Dental',
     'Hobbyists',
-    'Artitectural',
+    'Architectural',
     'Jewellery',
   ];
-  induscheckedValues: string[] = [];
-  induscheckedStatus: boolean[] = new Array(this.induscheckboxes.length).fill(
-    false
-  );
+  selectedIndustryOptions: string[] = [];
+  industryCheckboxStates: boolean[] = new Array(
+    this.industryOptions.length
+  ).fill(false);
 
-  onIndusCheckboxChange(event: Event, index: number) {
-    const inputElement = event.target as HTMLInputElement;
-    this.induscheckedStatus[index] = inputElement.checked;
+  constructor(private dataService: DataService) {}
+
+  filterResults(inputElement: HTMLInputElement): void {
+    this.searchQuery = inputElement.value;
+    this.dataService.filterData(this.searchQuery, this.filterTags);
   }
 
-  getCheckedValues() {
-    this.techcheckedValues = this.techcheckboxes.filter(
-      (_, index) => this.techcheckedStatus[index]
+  onTechCheckboxChange(event: Event, index: number): void {
+    const checkbox = event.target as HTMLInputElement;
+    this.techCheckboxStates[index] = checkbox.checked;
+  }
+
+  onIndustryCheckboxChange(event: Event, index: number): void {
+    const checkbox = event.target as HTMLInputElement;
+    this.industryCheckboxStates[index] = checkbox.checked;
+  }
+
+  updateCheckedValues(): void {
+    this.selectedTechOptions = this.techOptions.filter(
+      (_, index) => this.techCheckboxStates[index]
     );
-    this.induscheckedValues = this.induscheckboxes.filter(
-      (_, index) => this.induscheckedStatus[index]
+    this.selectedIndustryOptions = this.industryOptions.filter(
+      (_, index) => this.industryCheckboxStates[index]
     );
-    this.filterArray = this.techcheckedValues.concat(this.induscheckedValues);
+    this.filterTags = [
+      ...this.selectedTechOptions,
+      ...this.selectedIndustryOptions,
+    ];
     this.isFilterOpen = false;
   }
-  resetAll() {
-    this.techcheckedStatus.fill(false);
-    this.induscheckedStatus.fill(false);
-    this.techcheckedValues = [];
-    this.induscheckedValues = [];
-    this.filterArray = [];
-    this.getCheckedValues();
+
+  resetAllFilters(): void {
+    this.techCheckboxStates.fill(false);
+    this.industryCheckboxStates.fill(false);
+    this.selectedTechOptions = [];
+    this.selectedIndustryOptions = [];
+    this.filterTags = [];
+    this.updateCheckedValues();
+  }
+
+  removeFilterTag(tag: string): void {
+    this.filterTags = this.filterTags.filter((value) => value !== tag);
   }
 }

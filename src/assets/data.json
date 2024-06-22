@@ -26,9 +26,35 @@
     "fullUrl": "The Url to navigate to once learn more is clicked"
   },
   {
-    "name": "PLA",
-    "tags": ["3D printing", "FDM", "Medical", "Standard Plastic"],
-    "image": "https://www.twi-global.com/CachedImage.axd?ImageName=ABS-and-PLA-Filament.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=103178&ImageModified=20201208170447",
+    "name": "Nylon",
+    "tags": ["3D printing", "SLA", "Medical And Dental", "Standard Plastic" ,"Automotive"],
+    "image": "https://www.polymershapes.com/wp-content/uploads/2017/08/Nylon.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "red", "white", "yellow" , "blue"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "ABS",
+    "tags": ["DMLS", "Aerospace", "MJS"],
+    "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "availaleColors": ["black", "grey", "green"],
+    "moreInfo": {
+      "pros": "Pros of the items",
+      "cons": "Cons of the items",
+      "others": "Other additional information"
+    },
+    "fullUrl": "The Url to navigate to once learn more is clicked"
+  },
+  {
+    "name": "Polyster",
+    "tags": ["CNC", "FDM", "Medical And Dental", "Jewellery"],
+    "image": "https://www.treehugger.com/thmb/8ZFzHt2h-01hfRwFrwmuYsTQyGY=/6000x4000/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2020__03__Polyester-biodegradable-colorful-fabric-6670f868d65948f59c83b2336d3350eb.jpg",
     "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
     "availaleColors": ["black", "red", "white", "yellow"],
     "moreInfo": {
@@ -39,8 +65,8 @@
     "fullUrl": "The Url to navigate to once learn more is clicked"
   },
   {
-    "name": "PTEG",
-    "tags": ["3D printing", "SLA", "Electronics", "Resin"],
+    "name": "PVC",
+    "tags": ["Vaccum Casting", "SLA", "Consumer Electronics", "SLF"],
     "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
     "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
     "availaleColors": ["black", "grey", "white"],
@@ -54,7 +80,7 @@
   {
     "name": "PLA",
     "tags": ["3D printing", "FDM", "Medical", "Standard Plastic"],
-    "image": "https://www.twi-global.com/CachedImage.axd?ImageName=ABS-and-PLA-Filament.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=103178&ImageModified=20201208170447",
+    "image": "https://www.treehugger.com/thmb/8ZFzHt2h-01hfRwFrwmuYsTQyGY=/6000x4000/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2020__03__Polyester-biodegradable-colorful-fabric-6670f868d65948f59c83b2336d3350eb.jpg",
     "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
     "availaleColors": ["black", "red", "white", "yellow"],
     "moreInfo": {
@@ -66,33 +92,7 @@
   },
   {
     "name": "PTEG",
-    "tags": ["3D printing", "SLA", "Electronics", "Resin"],
-    "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    "availaleColors": ["black", "grey", "white"],
-    "moreInfo": {
-      "pros": "Pros of the items",
-      "cons": "Cons of the items",
-      "others": "Other additional information"
-    },
-    "fullUrl": "The Url to navigate to once learn more is clicked"
-  },
-  {
-    "name": "PLA",
-    "tags": ["3D printing", "FDM", "Medical", "Standard Plastic"],
-    "image": "https://www.twi-global.com/CachedImage.axd?ImageName=ABS-and-PLA-Filament.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=103178&ImageModified=20201208170447",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    "availaleColors": ["black", "red", "white", "yellow"],
-    "moreInfo": {
-      "pros": "Pros of the items",
-      "cons": "Cons of the items",
-      "others": "Other additional information"
-    },
-    "fullUrl": "The Url to navigate to once learn more is clicked"
-  },
-  {
-    "name": "PTEG",
-    "tags": ["3D printing", "SLA", "Electronics", "Resin"],
+    "tags": ["3D printing", "SLA", "Consumer Electronics", "MJS"],
     "image": "https://formfutura.b-cdn.net/wp-content/uploads/2024/01/Banner-foto.jpg",
     "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
     "availaleColors": ["black", "grey", "white"],
